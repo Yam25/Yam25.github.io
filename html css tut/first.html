@@ -2,15 +2,145 @@
 <html>
     <head>
         <title> First Webpage </title>
-        <meta name="application-name" content="First Webpage"/>
-        <meta name="keywords" content="best,good,restuaruant,cafe,banglore,karnataka"/>
-        <link href="C:\Users\ADMIN\OneDrive\Documents\GitHub\Yam25.github.io\html css tut\external.css" rel="stylesheet" />
+        <meta charset="utf-8" />
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta http-equiv="refresh" content="300" />
+        <meta name="viewport" content="width=device-width; initial-scale=1" />
+        <meta name="application-name" content="First Webpage" />
+        <meta name="description" content="THis is the first webpage of Pyzaql Feb'24 batch" />
+        <meta name="keywords" content="best, good, restaurant, cafe, cheap, bangalore, bengaluru, blr, karnataka" />
+        <link href="./assets/external.css" rel="stylesheet" />
     </head>
     <style>
         /*css content*/
     </style>
     <body>
-        <h1> Hello this is yamini</h1>
+        <!.... basic tagss.....>
+        
+        <p> Hello this is yamini</p>
+        <div id="divi"><center>this is div tag</center></div><br><div> this is another div tag</div>
+        <span id="span"> this is span tag</span> <!.. here specifying id matters in order to identify it using "a"tag...>
+        <p align="right"> this      is paragraph      
+            tag
+        </p>
+        <pre> this is pre    
+             formatted tag</pre>
+        <br>  <!....this is break tag...>
+        <hr>  <!... this is The hr tag defines a thematic break in an HTML page...>
+        <a href="https://www.instagram.com/" target="blank">Instagram</a> <br> <!.... target represents how to open the link...>
+        <a href="#divi">take me to divi</a> <!.. used to navigate to the particular tag...>
+        <hr>
+        <!... multimedia tags...>
+        <img src="https://www.pyzaql.com/_next/static/media/heroIllu.3be56d30.svg" height="200px" />
+        <figure>
+        <img src="./assets/sample.png" height="200px"/>
+        <figcaption>fig.1 random pic,google</figcaption>
+        </figure>
+        <img srcset="./assets/white.jpg 800w, ./assets/pink.jpg 400w" src="./assets/sample.png"/>
+        <audio controls>
+            <source src="./assets/too many nights.mp3" type="audio/mp3"/>
+        </audio>
+        <picture>
+            <source srcset="./assets/pink.jpg" media="(max-width:800px)">
+            <source srcset="./assets/white.jpg" media="(max-width:1000px)">
+            <img src="/assets/sample.png" alt="Flowers" style="width:auto;">
+        </picture>
+        <video controls height="200px">
+            <source src="./assets/sharon stone.mov" type="video/mp4"/>
 
+        </video>
+    <!... semantics tags....!>
+        <header>
+        </header>
+        <footer>
+            <p>this is a footer</p>
+        </footer>
+        <aside>
+            <p align="center"> hello, this is gonna be fun and i will learn to build a website</p>
+        </aside>
+        <marquee style="background-color:rgb(203, 145, 117);" direction="up" height="200px"><center><mark> HTML</mark> stands for  hypertext markup language</center>></marquee>
+    <!.... list tags......>
+        <ol type="A">
+            <li>hello</li>
+            <li>welcome</li>
+            <li>heheheee</li>
+        </ol>
+        <ul type="square">
+            <li>hehehee</li>
+            <li>1</li>
+            <li>4</li>
+        </ul>
+        <dl>
+            <dt>&lt;Semantics tags&gt;</dt>
+            <dd>Semantic HTML is the use of HTML markup to reinforce the semantics, or meaning, of the information in web pages and web applications rather than merely to define its presentation or look. Semantic HTML is processed by traditional web browsers as well as by many other user agents. </dd>
+        </dl>
+    <!.. headings tag....>
+        <h1 style="color:rgb(177, 7, 7);"><i><center>Hello</center></i></h1>   <!.... h1 to h6 we have heading tags....>
+        <h2><i><center>Hello</center></i></h2>
+        <h3><i><center>Hello</center></i></h3>
+        <h4><i><center>Hello</center></i></h4>
+        <h5><i><center>Hello</center></i></h5>
+        <h6><i><center>Hello</center></i></h6>
+    <!... table tags....>
+         <table border="3">
+            <caption><b>Employee Database</b></caption>
+            <colgroup>
+                <col span="1" style="background-color:bisque;"/>
+            <col span="2" style="background-color:rgb(255, 202, 196);"/>
+            <col span="3" style="background-color:rgb(183, 194, 233);"/>
+            </colgroup> 
+            <thead>
+                <tr>
+                    <th rowspan="2">Roll.No</th>
+                    <th colspan="2">Student Name</th>
+                    <th rowspan="2">Job</th>
+                </tr>
+                <tr >
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                </tr>
+            </thead>
+            <tr>
+                <td><b>101</b></td>
+                <td>yamini</td>
+                <td>iyengar</td>
+                <td>web development</td>
+            </tr>
+            <tr>
+                <td><b>102</b></td>
+                <td>dimp</td>
+                <td>sum</td>
+                <td>digital marketing</td>
+            </tr>
+            <tr>
+                <td><b>103</b></td>
+                <td>micheal</td>
+                <td>bass</td>
+                <td>web development</td>
+            </tr>
+            <tr>
+                <td><b>104</b></td>
+                <td>john</td>
+                <td>crimson</td>
+                <td>python</td>
+            </tr>
+            <tfoot>
+                1
+            </tfoot>
+        </table>
+    <!... form tags....>
+    <fieldset>
+        <legend>1<sup>st</sup>form</legend>
+         <form method="post" action="https://in.pinterest.com/business/hub/">
+            <label for="email-input">Email</label>
+            <input type="email" id="email-input" name="eid"/>
+            <label for="pwd-input">Password</label>
+            <input type="password" id="pwd-input" name="pssd"/>
+            <button type="submit">Submit</button><br>
+            <textarea rows="5" cols="30"></textarea>
+
+         </form>
+    </fieldset>
+    <div style="height: 1000px"></div> <!... this makes page scrollable...>
     </body>
 </html>
