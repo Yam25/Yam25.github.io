@@ -1,0 +1,27 @@
+.container{
+    border: 10px solid black;
+    display: flex;
+    height: 600px;
+   /* flex-direction: column; this makes main axis to column*/
+   /*justify-content: center; this is for main axis
+   align-items: center; this is for cross axis*/
+   /*flex-wrap: wrap; this is for wrapping the items like when theres so much items we can send em to diff lines*/
+   /* align-content: center this only works when flex-wrap is set to wrap and it works on cross axis
+   gap:1em used to give gap b/w items*/
+
+}
+/*.item1{
+    background-color: blueviolet;
+}
+.item2{
+    background-color:brown;
+}*/
+.item1{
+    /*flex-grow:1; used to grow the items size if it exists*/
+    /*flex-shrink: 1; used to shrink the particular item faster than others when resizing the browser. set to 0 which means item refuses to shrink*/
+    /*flex-basis: 300px; this is to set width of the item*/
+    /*flex:1 this is used instead of flex-g,flex-s,flex-b*/
+    /*align-self:center to align individual items*/
+    /*order:2; used to change the order of items in the page*/
+    background-color: gray;
+}

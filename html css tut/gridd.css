@@ -1,0 +1,37 @@
+
+    
+.container{
+    display: grid;
+    border:10px solid black;
+    /*height=600px*/
+    grid-template-rows:repeat(4,100px); /*used for setting no. of rows and cols*/
+    grid-template-columns:repeat(auto-fit,minmax(100px,1fr)); /*for responsive grid without media quaries use "auto-fit" for repeat it automatically fits the page as size decreases woahhh!*/
+    /*justify-content: space-evenly;
+    align-content: space-evenly;  we use this for assinging items in the grid
+   /* justify-items: center;
+    align-items: baseline;*/
+    /*grid-template-areas: 
+    "header header"
+    "main aside"             we use this to assign header,footer etcc
+    "footer footer";*/
+}
+.item1{
+    /*grid-area: header; for area assiging;
+    justify-self:center
+    align-self:end this is used to override grid properties for items and add it for individual item*/
+    background-color: purple;
+    
+}
+.item2{
+   /* grid-area: main;*/
+    background-color:brown;
+}
+.item3{
+    /*grid-area: aside;*/
+    background-color:grey;
+}
+.item4{
+    /*grid-area: footer;*/
+    background-color:bisque;
+    
+}
